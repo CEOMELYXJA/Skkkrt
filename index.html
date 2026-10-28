@@ -440,7 +440,7 @@ window.i9cmd=k=>{if(!S||!(k in P.CMD))return;send(P.frame(S,P.CMD[k],!S[k]))};
 $('#g3').onclick=()=>{
   if($('#v3'))return;
   $('#g3s').textContent=S?'Trottinette connectée : la poignée pilote le jeu.':'Pas de trottinette connectée : tu peux jouer au clavier (ordinateur).';
-  const f=document.createElement('iframe');f.id='v3';f.src='3d/jeu.html?embed=1';
+  const f=document.createElement('iframe');f.id='v3';f.src='jeu.html?embed=1';
   f.allow='accelerometer; gyroscope; magnetometer; autoplay; fullscreen; geolocation';
   f.style.cssText='position:fixed;inset:0;width:100%;height:100%;border:0;z-index:300;background:#000';
   document.body.appendChild(f);
